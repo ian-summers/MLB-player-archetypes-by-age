@@ -18,6 +18,9 @@ A logistic regression model was built to classify players into age brackets base
 ## Correlation Analysis
 A correlation matrix was generated to identify relationships between variables. While some weak negative correlations were observed, such as a decrease in certain performance metrics with age, no strong correlations were found that significantly impacted model accuracy.
 
+## Random Forest
+A random forest model was created to see how it would compare to the other machine learning methods we had attempted prior. The same datasest was read in and preprocessing was preformed. Running the model initiall with 120 estimators, we were able to achieve very similar results to the other models. Multiple attempts were made to optimize the model including, adding removed feature columns back into the dataset, adjusting the number of estimators, and handeling imbalanced classes. Each attempt at optimizing the model did not work.  
+
 ## Attempts to Improve Model Accuracy
 Several strategies were employed to enhance model accuracy, including rearranging age brackets, PCA, and normalization. However, these attempts yielded minimal improvements, indicating that the dataset's classification value was limited compared to its predictive value in linear regression analysis.
 
