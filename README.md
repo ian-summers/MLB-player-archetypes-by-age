@@ -19,7 +19,13 @@ We employed a multinomial regression model to handle multiple age groups in our 
 The model demonstrated its strength in accurately identifying players aged 24-28. However, it encountered difficulties with other age brackets, particularly older players. These findings highlight the challenges in categorizing players' playing styles solely based on age.
 
 ## Attempts to Improve Model Accuracy
-Several strategies were employed to enhance model accuracy, including rearranging age brackets, PCA, and normalization. However, these attempts yielded minimal improvements, indicating that the dataset's classification value was limited compared to its predictive value in linear regression analysis.
+During the analysis, several attempts were made to enhance the accuracy of the logistic regression model. Below are the key findings from these efforts:
+- Increasing the maximum iterations for model training marginally improved accuracy, but it plateaued at around 1000 iterations.
+- Consolidating age brackets 4 and 5 did not significantly impact the model's accuracy.
+- Normalizing the data and applying principal component analysis (PCA) showed only marginal improvements in model accuracy. Additionally, reducing the number of components to 20, 15, 10, and 5 yielded similar results, indicating diminishing returns with fewer components.
+- Reorganizing age brackets to achieve a more balanced distribution (4 brackets with equal sizes) resulted in a significant drop in model accuracy compared to the original unbalanced age brackets.
+
+Interestingly, normalization and PCA slightly reduced the accuracy of the model with modified age brackets, indicating that the original DataFrame with 4 unbalanced age brackets performed better. These findings suggest that the dataset's classification value was limited compared to its predictive value in linear regression analysis.
 
 ## Random Forest
 A random forest model was created to see how it would compare to the other machine learning methods we had attempted prior. The same datasest was read in and preprocessing was preformed. Running the model initially with 120 estimators, we were able to achieve very similar results to the other models. Multiple attempts were made to optimize the model including, adding removed feature columns back into the dataset, adjusting the number of estimators, and handeling imbalanced classes. Each attempt at optimizing the model did not work.  
