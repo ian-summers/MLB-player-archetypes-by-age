@@ -9,7 +9,7 @@
 - [Conclusion](#conclusion)
 
 ## Introduction
-This document presents an analysis of player performance data in a sports organization. The goal of this analysis is to determine if players exhibit unique playing styles based on age. Various techniques such as logistic regression, correlation analysis, PCA, and normalization were employed to explore the data and improve model accuracy.
+This document presents an analysis of MLB batting performance data by their age. The goal of this analysis is to determine if MLB batters exhibit unique playing styles based on age. Various techniques such as logistic regression, correlation analysis, PCA, random forest, and normalization were employed to explore the data and improve model accuracy.
 
 ## Data Overview
 The dataset comprises all MLB players with a minimum of 10 at-bats (ABs) per season from 2013-2023. Data was obtained from Fangraphs using the pybaseball module and processed in Spark. Preprocessing steps were implemented to handle missing values and categorical variables. Over 7,500 eligible players per season were included, resulting in a total of 1,702,715 at-bats analyzed. Thirty-five key metrics were selected for analysis, focusing on factors related to decision-making and playing style per at-bat.
