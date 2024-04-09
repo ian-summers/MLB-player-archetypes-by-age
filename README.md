@@ -18,12 +18,10 @@ The dataset comprises all MLB players with a minimum of 10 at-bats (ABs) per sea
 A linear regression analysis was carried on the dataset with reference to the age_bracket. The dataset was splitted into into training and testing set to predict the model.
 From the elbow curve, it could be noted that the best K-mean value is 3. Plots were done although with the K-mean values of 3 and 4 to compare the output.
 The variance ratio of the first principal component is approximately 99.76%. This  shows that the dataset is highly skewed towards the first principal component indicating a strong underlying patterns or structure of the dataset. Therefore, a PCA dimensionality reduction on the dataset can be done with just the first principal component.
-An additional analysis to gain a deeper understanding of the model’s performance was done by visualizing the predicted versus the actual values. The residuals were examined and other evaluation metrics such as R-squared, intercept and the coefficient.
-A mean squared error value of 0.0864958441960215 which is lower and closer to zero for this analysis predicting the target variable, which is the age bracket, indicates the model is very accurate.
+
+An additional analysis to gain a deeper understanding of the model’s performance was done by visualizing the predicted versus the actual values. The residuals were examined and other evaluation metrics such as R-squared, intercept and the coefficient. A mean squared error value of 0.0864958441960215 which is lower and closer to zero for this analysis predicting the target variable, which is the age bracket, indicates the model is very accurate.
 The intercept value of -2.010 might not have a direct interpretation in terms of age since the age bracket is categorical. Since the value of the coefficient is negative an increase in predictor leads to a decrease in age bracket therefore it has less influence in predicting the age bracket.
 This data having a good Linear Regression gives it a high predictive quality.
-
-
 
 ## Logistic Regression
 We employed a multinomial regression model to handle multiple age groups in our analysis. Initially, the model achieved an accuracy of 50.7%. Despite implementing various optimization techniques, including PCA and normalization, we reached a plateau at around 53% accuracy. Our analysis included generating a confusion matrix and classification reports.
