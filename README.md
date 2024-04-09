@@ -1,6 +1,7 @@
 ## Table of Contents
 - [Introduction](#introduction)
 - [Data Overview](#data-overview)
+- [Linear Regression and Mean Squared Analysis](#linear-regression-and-mean-squared-analysis) 
 - [Logistic Regression](#logistic-regression)
 - [Attempts to Improve Model Accuracy](#attempts-to-improve-model-accuracy)
 - [Random Forest](#random-forest)
