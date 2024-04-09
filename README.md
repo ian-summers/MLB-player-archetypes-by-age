@@ -14,7 +14,9 @@ This document presents an analysis of player performance data in a sports organi
 The dataset includes a comprehensive range of metrics related to player performance, including offensive and defensive statistics, physical attributes, and age. The dataset was preprocessed to handle missing values and categorical variables, ensuring data integrity for analysis.
 
 ## Logistic Regression
-A logistic regression model was built to classify players into age brackets based on their performance metrics. Despite preprocessing efforts and attempts to optimize the model, the accuracy plateaued at around 53%. The model performed best in identifying players aged 24-28 but struggled with other age brackets.
+We employed a multinomial regression model to handle multiple age groups in our analysis. Initially, the model achieved an accuracy of 50.7%. Despite implementing various optimization techniques, including PCA and normalization, we reached a plateau at around 53% accuracy. Our analysis included generating a confusion matrix and classification reports.
+
+The model demonstrated its strength in accurately identifying players aged 24-28. However, it encountered difficulties with other age brackets, particularly older players. These findings highlight the challenges in categorizing players' playing styles solely based on age.
 
 ## Attempts to Improve Model Accuracy
 Several strategies were employed to enhance model accuracy, including rearranging age brackets, PCA, and normalization. However, these attempts yielded minimal improvements, indicating that the dataset's classification value was limited compared to its predictive value in linear regression analysis.
